@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-image: url("/img/haseeb-jamil-qCn0kU9M_uk-unsplash.jpg");
+}
+
+/** Barra de navegacion */
+header{
+    background-color: #FA8D62;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** Contenido principal */
+main{
+    background-color: #FFFEFB;
+}
