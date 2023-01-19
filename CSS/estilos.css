@@ -1,21 +1,61 @@
 *{
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
 }
 body{
     background-image: url("/img/haseeb-jamil-qCn0kU9M_uk-unsplash.jpg");
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 0.7fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
 }
 
 /** Barra de navegacion */
 header{
-    background-color: #FA8D62;
+    grid-column: 1 / 7;
+    grid-row: 1;
 }
 nav{
     display: flex;
     justify-content: space-evenly;
 }
+a{
+    color: #FFFEFB;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+}
 
 /** Contenido principal */
 main{
+    width: 80em;
+    height: 30em;
     background-color: #FFFEFB;
+    border-radius: 20px;  
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+}
+
+main img{
+    width: 20rem;
+    height: 70%;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+main h1{
+    color: #2bdbd5;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+ul li, p{
+    font-family: 'Roboto', serif;
+    font-size: 20px;
 }
