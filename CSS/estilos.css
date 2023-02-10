@@ -4,7 +4,9 @@
     margin: 0px;
 }
 body{
-    background-image: url("/img/haseeb-jamil-qCn0kU9M_uk-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/Montañas.jpg");
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 0.7fr);
@@ -28,16 +30,21 @@ a{
     font-size: 25px;
     font-family: 'Roboto Slab', serif;
 }
+a:hover{
+    color:#fa8d62;
+}
 
 /** Contenido principal */
 main{
     width: 80em;
     height: 30em;
     background-color: #FFFEFB;
-    border-radius: 20px;  
+    border-radius: 3% 3% 0% 0% / 8% 8% 0% 0%;
     grid-column: 2 / 6;
     grid-row: 2 / 3;
     display: flex;
+    animation: letras 4s infinite;
+    position: relative;
 }
 
 main img{
@@ -54,11 +61,18 @@ main h1{
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 30px;
+
 }
 #info p{
     font-family: 'Roboto', serif;
     font-size: 25px;
     color: #2B616D;
+}
+#info li{
+    font-family: 'Roboto', serif;
+    font-size: 25px;
+    color: #2B616D;
+    margin-bottom: 20px;
 }
 
 /** Pie de pagina */
@@ -68,11 +82,26 @@ footer{
     background-color: #fa8d62;
     width: 80em;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 0% 0% 1% 1%  / 0% 0% 10% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: letras 4s infinite;
+    position: relative;
 }
 footer p{
     font-size: 20px;
+}
+
+/** Animaciones */
+@keyframes letras {
+    0% {top: 0px;
+
+    }
+    50%{
+        top: 10px;
+    }
+    100%{
+        top: 0px;
+    }
 }
